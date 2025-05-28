@@ -1,0 +1,150 @@
+/* Center the entire app */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f2f5;
+}
+
+/* Container for login box */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Login Box Styling */
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+/* Input Fields */
+.email,
+.password,
+.usr-name{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.email input,
+.password input,
+.usr-name input{
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.email input:focus,
+.password input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.login-button:hover {
+  background-color: #388E3C;
+}
+
+/* Auth Route (Sign Up / Sign In links inside login box) */
+.auth-route {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Adds spacing between buttons */
+  margin-top: 10px;
+}
+
+.auth-route a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Prevents full width issue */
+}
+
+.auth-route a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styling */
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+    max-width: 320px;
+    padding: 20px;
+  }
+
+  .auth-route {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .auth-route a {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+
+/* Google Login Button Container */
+.google-login-container {
+  margin-top: 20px;
+  width: 100%; /* Ensure it takes full width of its parent */
+  display: flex;
+  justify-content: center; /* Center the Google button */
+  align-items: center;
+}
+
+/* Divider for "OR" */
+.divider {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  line-height: 0.1em;
+  margin: 20px 0;
+}
+
+.divider span {
+  background:#fff;
+  padding:0 10px;
+  color: #555;
+  font-weight: bold;
+}
